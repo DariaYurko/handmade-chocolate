@@ -1,0 +1,84 @@
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   letter-spacing: -0.02em;
+   color: rgba(255, 255, 255, 0.7);
+   background: #fafafa;
+}
+
+[class*="__container"] {
+   max-width: 375px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.section-title {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #111111;
+}
+
+.section-title_orange {
+   color: #fd9222;
+}
+
+.button {
+   display: inline-block;
+   font-weight: 600;
+   color: #ffffff;
+   line-height: 1.21;
+   background: #fd9222;
+   padding: 12px 28px;
+   border-radius: 100px;
+   transition: color 100ms linear, background-color 100ms linear;
+}
+
+.button:hover,
+.button:focus {
+   color: #fd9222;
+   background-color: #fcf1E0;
+}
+
+/* ----- Mobile only -----*/
+@media only screen and (max-width: 375px) {}
+
+/* ----- /Mobile only -----*/
+
+
+
+/* ------ Tablet ----- */
+@media only screen and (min-width: 768px) {
+   [class*="__container"] {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+   }
+
+   .section-title {
+      font-size: 24px;
+      line-height: 1.17;
+   }
+
+   .button {
+      padding: 14px 40px;
+   }
+}
+
+/* ------ /Tablet ----- */
+
+
+
+/* ----- Desktop ----- */
+@media only screen and (min-width: 1200px) {
+   [class*="__container"] {
+      max-width: 768px;
+   }
+}
+
+/* ----- /Desktop ----- */
