@@ -91,10 +91,11 @@
       padding-right: 20px;
       padding-bottom: 20px;
       background-color: #1e1823;
+      overflow: auto;
 
       display: flex;
       flex-direction: column;
-      overflow: auto;
+      row-gap: 40px;
 
       transform: translateX(100%);
       visibility: hidden;
