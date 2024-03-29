@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,700italic&display=swap" rel="stylesheet" />
-    
-    <title>Simply chocolate</title>
-    <script type="module" crossorigin src="/handmade-chocolate/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/handmade-chocolate/assets/index-fa385e4e.css">
-  </head>
-  <body>
-    <!-- Loads the specified header.html file -->
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="." class="nav-link">1</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply chocolate</title>
+  <link rel="icon" type="image/svg+xml" href="/handmade-chocolate/favicon.svg" />
+
+  <!-- Modern Normalize link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Own styles link -->
+  
+  <script type="module" crossorigin src="/handmade-chocolate/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/handmade-chocolate/assets/index-390f2a8d.css">
+</head>
+
+<body>
+  <!-- Loads the specified header.html file -->
+  <header class="page-header">
+  <div class="page-header__container">
+    <a href="./index.html" class="logo">
+      <span class="logo__text-italic">SIMPLY</span>&nbsp;CHOCOLATE
+      <svg class="logo__icon" width="21" height="21">
+        <use href="../img/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link current">Home</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">How it’s made?</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Chocolate is loved</a></li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li class="social__item">
+        <a href="" class="social__link">
+          <svg class="social__icon" width="22" height="22">
+            <use href="../img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
       </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">2</a>
+      <li class="social__item">
+        <a href="" class="social__link">
+          <svg class="social__icon" width="20" height="20">
+            <use href="../img/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
+
+    <button class="btn-burger" type="button">
+      <svg class="btn-burger__icon" width="28" height="28">
+        <use href="../img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+  </div>
 </header>
 
+  <main class="page">
     
-    <main class="page">
-      
-    </main>
+  </main>
 
-    <!-- Loads the specified footer.html file -->
-    <footer class="footer">Footer</footer>
-    
-  </body>
+  <div class="mobile-menu">
+   <button class="btn-close" type="button">
+      <svg class="btn-close__icon" width="28" height="28">
+         <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+   </button>
+   <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link current">Home</a></li>
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">How it’s made?</a></li>
+         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Chocolate is loved</a></li>
+      </ul>
+   </nav>
+   <ul class="social mobile-menu__social">
+      <li class="social__item">
+         <a href="" class="social__link">
+            <svg class="social__icon" width="22" height="22">
+               <use href="../img/icons.svg#icon-instagram"></use>
+            </svg>
+         </a>
+      </li>
+      <li class="social__item">
+         <a href="" class="social__link">
+            <svg class="social__icon" width="20" height="20">
+               <use href="../img/icons.svg#icon-twitter"></use>
+            </svg>
+         </a>
+      </li>
+   </ul>
+</div>
+  
+  
+</body>
+
 </html>
