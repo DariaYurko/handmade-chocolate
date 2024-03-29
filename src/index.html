@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,700italic&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Simply chocolate</title>
-  </head>
-  <body>
-    <!-- Loads the specified header.html file -->
-    <load src="./partials/header.html" />
-    
-    <main class="page">
-      <load src="./partials/hero.html" />
-    </main>
 
-    <!-- Loads the specified footer.html file -->
-    <load src="./partials/footer.html" />
-    <script type="module" src="./main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply chocolate</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Modern Normalize link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Own styles link -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Loads the specified header.html file -->
+  <load src="./partials/header.html" />
+
+  <main class="page">
+    <load src="./partials/hero.html" />
+  </main>
+
+  <load src="./partials/mobile-menu.html" />
+  <load src="./partials/footer.html" />
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>

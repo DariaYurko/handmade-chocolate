@@ -1,12 +1,117 @@
-/* ----- Mobile only -----*/
-@media only screen and (max-width: 375px) {}
+/* =========== Mobile  ==========*/
+.page-header {
+   padding-top: 20px;
+   padding-bottom: 14px;
+}
 
-/* ----- /Mobile only -----*/
+.page-header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 20px;
+}
+
+
+.logo {
+   display: inline-flex;
+   align-items: center;
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.29;
+   letter-spacing: -0.03em;
+   color: #111;
+
+   transition: transform 100ms linear;
+}
+
+.logo:hover,
+.logo:focus {
+   transform: scale(1.1);
+}
+
+.logo__text-italic {
+   font-style: italic;
+}
+
+.logo__icon {
+   margin-left: 5px;
+   stroke: #fd9222;
+   fill: #fcf1e0;
+}
+
+.menu,
+.social {
+   display: none;
+}
+
+.btn-burger {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-burger__icon {
+   stroke: #111111;
+   transition: transform 100ms linear;
+}
+
+.btn-burger__icon:hover,
+.btn-burger__icon:focus {
+   transform: scale(1.1);
+}
+
+
+.social__link {
+   stroke: #ffffff;
+   fill: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+   stroke: #fd9222;
+}
+
+.menu__link {
+   color: #111111;
+}
+
+
+.current,
+.menu__link:hover,
+.menu__link:focus {
+   color: #fd9222;
+}
+
+/* ========== /Mobile ===========*/
 
 
 
 /* ------ Tablet ----- */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {   
+   .menu,
+   .social {
+      display: block;
+   }
+
+   .logo {
+      font-size: 18px;
+      line-height: 1.11;
+   }
+
+   .logo__icon {
+      width: 24px;
+      height: 24px;
+   }
+
+   .btn-burger {
+      display: none;
+   }
+
+   .menu__link {
+      color: #111111;
+   }
+}
 
 /* ------ /Tablet ----- */
 
