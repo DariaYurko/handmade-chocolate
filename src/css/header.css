@@ -1,4 +1,4 @@
-/* =========== Mobile  ==========*/
+/* Mobile  ==============================*/
 .page-header {
    padding-top: 20px;
    padding-bottom: 14px;
@@ -8,9 +8,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   column-gap: 20px;
 }
-
 
 .logo {
    display: inline-flex;
@@ -20,7 +18,7 @@
    font-size: 14px;
    line-height: 1.29;
    letter-spacing: -0.03em;
-   color: #111;
+   color: #111111;
 
    transition: transform 100ms linear;
 }
@@ -40,10 +38,6 @@
    fill: #fcf1e0;
 }
 
-.menu,
-.social {
-   display: none;
-}
 
 .btn-burger {
    display: flex;
@@ -61,42 +55,113 @@
    transform: scale(1.1);
 }
 
-
-.social__link {
-   stroke: #ffffff;
-   fill: none;
+.menu__link,
+.mobile-menu__link {
+   font-weight: 500;
+   line-height: 1.14;
+   transition: color 150ms linear;
 }
 
-.social__link:hover,
-.social__link:focus {
-   stroke: #fd9222;
-}
-
-.menu__link {
-   color: #111111;
-}
-
-
-.current,
-.menu__link:hover,
-.menu__link:focus {
-   color: #fd9222;
-}
-
-/* ========== /Mobile ===========*/
+/* =========================== /Mobile */
 
 
 
-/* ------ Tablet ----- */
-@media only screen and (min-width: 768px) {   
-   .menu,
-   .social {
-      display: block;
+/*  Mobile ONLY =======================*/
+@media only screen and (max-width: 767px) {
+   .page-header__container {
+      column-gap: 20px;
    }
 
-   .logo {
-      font-size: 18px;
-      line-height: 1.11;
+   .page-header__menu,
+   .page-header__social {
+      display: none;
+   }
+
+   /* ---- Mobile-menu ---- */
+   .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 999;
+
+      min-width: 220px;
+      height: 100%;
+      padding-top: 136px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      background-color: #1e1823;
+
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+
+      transform: translateX(100%);
+      visibility: hidden;
+      transition: transform 100ms linear, visibility 100ms linear;
+   }
+
+   .mobile-menu.active {
+      transform: translateX(0);
+      visibility: visible;
+   }
+
+   .mobile-menu__nav {
+      max-width: 124px;
+      align-self: center;
+      flex-grow: 1;
+   }
+
+   .mobile-menu__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+   }
+
+   .mobile-menu__link {
+      color: #ffffff;
+   }
+
+   .current,
+   .mobile-menu__link:hover,
+   .mobile-menu__link:focus {
+      color: #fd9222;
+   }
+
+   .mobile-menu__social {
+      align-self: flex-start;
+   }
+
+   .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+   }
+
+   /* ---- Mobile-menu ---- */
+}
+
+/* ========================== /Mobile only */
+
+
+
+/* Tablet ================================ */
+@media only screen and (min-width: 768px) {
+   .btn-burger {
+      display: none;
+   }
+
+   .mobile-menu {
+      display: none;
+   }
+
+   .page-header__container {
+      column-gap: 48px;
+   }
+
+   .page-header__logo {
+      flex-grow: 0;
    }
 
    .logo__icon {
@@ -104,20 +169,54 @@
       height: 24px;
    }
 
-   .btn-burger {
-      display: none;
+   .page-header__menu {
+      display: block;
+
+      flex-grow: 1;
+   }
+
+   .menu__list {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 24px;
    }
 
    .menu__link {
       color: #111111;
    }
+
+   .current,
+   .menu__link:hover,
+   .menu__link:focus {
+      color: #fd9222;
+   }
+
+   .social__link {
+      stroke: #111111;
+      transition: stroke 150ms linear;
+   }
+
+   .social__link:hover,
+   .social__link:focus {
+      stroke: #fd9222;
+   }
 }
 
-/* ------ /Tablet ----- */
+/* =========================== /Tablet */
 
 
 
-/* ----- Desktop ----- */
-@media only screen and (min-width: 1200px) {}
+/*  Desktop ========================= */
+@media only screen and (min-width: 1200px) {
+   .page-header__container {
+      column-gap: 90px;
+   }
 
-/* ----- /Desktop ----- */
+   .logo {
+      font-size: 18px;
+      line-height: 1.11;
+   }
+}
+
+/* ========================== /Desktop */
