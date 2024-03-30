@@ -6,12 +6,14 @@ body {
    background-color: #fafafa;
 }
 
-a:focus,
-button:focus {
-   outline: 1px solid #fd9222;
+a:focus {
    border-radius: 4px;
 }
 
+a:focus,
+button:focus {
+   outline: 1px solid #fd9222;
+}
 
 
 /* Container ---------------------- */
@@ -36,6 +38,7 @@ button:focus {
       max-width: 1200px;
    }
 }
+
 /* ---------------------- /Container */
 
 
@@ -62,6 +65,7 @@ button:focus {
       line-height: 1.17;
    }
 }
+
 /* ------------------- Section-title */
 
 
@@ -75,7 +79,7 @@ button:focus {
    background: #fd9222;
    padding: 12px 28px;
    border-radius: 100px;
-   transition: color 100ms linear, background-color 100ms linear;
+   transition: color 150ms linear, background-color 15 0ms linear;
 }
 
 .button:hover,
@@ -89,6 +93,7 @@ button:focus {
       padding: 14px 40px;
    }
 }
+
 /* ------------------------ /Button */
 
 
@@ -111,6 +116,26 @@ button:focus {
 .social__link:focus {
    stroke: #fd9222;
 }
+
 /* ----------------------- /Social */
 
 
+
+
+/* Menu -------------------------- */
+.link-menu {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: -0.02em;
+   color: #ffffff;
+   transition: color 150ms linear;
+}
+
+.link-menu:hover,
+.link-menu:focus,
+.link-menu.current {
+   color: #fd9222;
+}
+
+/* ------------------------- /Menu */
