@@ -6,9 +6,9 @@ body {
    background-color: #fafafa;
 }
 
-a:focus {
+/* a:focus {
    border-radius: 4px;
-}
+} */
 
 a:focus,
 button:focus {
@@ -79,7 +79,7 @@ button:focus {
    background: #fd9222;
    padding: 12px 28px;
    border-radius: 100px;
-   transition: color 150ms linear, background-color 15 0ms linear;
+   transition: color 150ms linear, background-color 150ms linear;
 }
 
 .button:hover,

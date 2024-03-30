@@ -1,0 +1,114 @@
+.hero-section {
+   height: 100vh;
+}
+
+.hero-section__container {
+   height: 100%;
+}
+
+.hero {
+   max-width: 727px;
+   height: 100%;
+   padding: 20px;
+   border-radius: 30px;
+   background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/mobile/bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   row-gap: 32px;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+   .hero {
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/mobile/bg@2x.jpg);
+   }
+}
+
+.hero__links {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   column-gap: 14px;
+   row-gap: 32px;
+}
+
+.slogan {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: -0.03em;
+   color: #ffffff;
+}
+
+.inner-link {
+   font-weight: 600;
+   /* line-height: 1.21; */
+   color: #ffffff;
+
+   display: inline-block;
+   padding: 12px 28px;
+   background-color: transparent;
+   border: 1px solid #ffffff;
+   border-radius: 100px;
+   transition: border-color 150ms linear, color 150ms linear;
+}
+
+.inner-link:hover,
+.inner-link:focus {
+   border-color: #fd9222;
+   color:#fd9222
+}
+
+.scroll-down {
+   display: inline-flex;
+   align-items: center;
+   column-gap: 12px;
+}
+
+.scroll-down__label {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: -0.03em;
+   color: #ffffff;
+}
+
+.scroll-down__thumb {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   transition: color 150ms linear, background-color 150ms linear, fill 150ms linear;
+}
+
+.scroll-down__icon {
+   fill: #fd9222;
+}
+
+.scroll-down:hover .scroll-down__icon,
+.scroll-down:focus .scroll-down__icon {
+   fill: #ffffff;
+}
+
+.scroll-down:hover .scroll-down__thumb,
+.scroll-down:focus .scroll-down__thumb {
+   background-color: #fd9222;
+}
+
+.scroll-down:hover .scroll-down__label,
+.scroll-down:focus .scroll-down__label {
+   color: #fd9222;
+}
+
+@media only screen and (min-width: 768px) {
+   .hero__scroll {
+      margin-left: auto;
+   }
+}
