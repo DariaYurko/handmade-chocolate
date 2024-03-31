@@ -1,9 +1,11 @@
 .hero-section {
    height: 100vh;
 }
+
 .hero-section__container {
    height: 100%;
    padding-top: 62px;
+   padding-bottom: 30px;
 }
 
 .hero {
@@ -15,6 +17,7 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   overflow: auto;
 
    display: flex;
    flex-direction: column;
@@ -36,17 +39,18 @@
    row-gap: 32px;
 }
 
+
 .slogan {
    font-weight: 500;
    font-size: 20px;
-   line-height: 1.2;
+   line-height: 1.21;
    letter-spacing: -0.03em;
    color: #ffffff;
 }
 
 .inner-link {
    font-weight: 600;
-   /* line-height: 1.21; */
+   line-height: 1.21;
    color: #ffffff;
 
    display: inline-block;
@@ -75,6 +79,7 @@
    line-height: 1.17;
    letter-spacing: -0.03em;
    color: #ffffff;
+   transition: color 150ms linear;
 }
 
 .scroll-down__thumb {
@@ -85,11 +90,12 @@
    height: 28px;
    border-radius: 50%;
    background-color: #ffffff;
-   transition: color 150ms linear, background-color 150ms linear, fill 150ms linear;
+   transition: background-color 150ms linear;
 }
 
 .scroll-down__icon {
    fill: #fd9222;
+   transition: fill 150ms linear;
 }
 
 .scroll-down:hover .scroll-down__icon,
@@ -114,7 +120,8 @@
 /* Tablet ---------------------------------- */
 @media only screen and (min-width: 768px) {
    .hero-section__container {
-      padding-top: 62px;
+      padding-top: 80px;
+      padding-bottom: 20px;
    }
 
    .hero {
@@ -124,6 +131,23 @@
 
    .hero__scroll {
       margin-left: auto;
+   }
+
+   .hero__slogan {
+      max-width: 484px;
+   }
+
+   .slogan {
+      font-size: 28px;
+   }
+
+   .inner-link {
+      padding: 14px 40px;
+   }
+
+   .scroll-down__label {
+      font-size: 14px;
+      line-height: 1.29;
    }
 }
 
@@ -139,6 +163,10 @@
 
 /* Desktop ---------------------------------- */
 @media only screen and (min-width: 1200px) {
+   .hero-section__container {
+      padding-bottom: 36px;
+   }
+
    .hero {
       max-width: 1336px;
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/desktop/bg.jpg);
