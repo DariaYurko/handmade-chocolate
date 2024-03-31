@@ -6,10 +6,6 @@ body {
    background-color: #fafafa;
 }
 
-/* a:focus {
-   border-radius: 4px;
-} */
-
 a:focus,
 button:focus {
    outline: 1px solid #fd9222;
@@ -27,7 +23,7 @@ button:focus {
 
 @media only screen and (min-width: 768px) {
    [class*="__container"] {
-      max-width: 768px;
+      max-width: 1136px;
       padding-left: 32px;
       padding-right: 32px;
    }
@@ -35,7 +31,7 @@ button:focus {
 
 @media only screen and (min-width: 1200px) {
    [class*="__container"] {
-      max-width: 1200px;
+      max-width: 1400px;
    }
 }
 

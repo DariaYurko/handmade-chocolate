@@ -1,14 +1,10 @@
-.hero-section {
-   height: 100vh;
-}
-
 .hero-section__container {
-   height: 100%;
+   padding-top: 62px;
 }
 
 .hero {
+   height: 100vh;
    max-width: 727px;
-   height: 100%;
    padding: 20px;
    border-radius: 30px;
    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/mobile/bg.jpg);
@@ -22,7 +18,7 @@
    row-gap: 32px;
 }
 
-@media only screen and (min-resolution: 192dpi) {
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
    .hero {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/mobile/bg@2x.jpg);
    }
@@ -60,7 +56,7 @@
 .inner-link:hover,
 .inner-link:focus {
    border-color: #fd9222;
-   color:#fd9222
+   color: #fd9222
 }
 
 .scroll-down {
@@ -107,8 +103,49 @@
    color: #fd9222;
 }
 
+/* --------------------------------- /Mobile */
+
+
+
+/* Tablet ---------------------------------- */
 @media only screen and (min-width: 768px) {
+   .hero-section__container {
+      padding-top: 62px;
+   }
+
+   .hero {
+      max-width: 1136px;
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/tablet/bg.jpg);
+   }
+
    .hero__scroll {
       margin-left: auto;
    }
 }
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+   .hero {
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/tablet/bg@2x.jpg);
+   }
+}
+
+/* --------------------------------- /Tablet */
+
+
+
+/* Desktop ---------------------------------- */
+@media only screen and (min-width: 1200px) {
+   .hero {
+      max-width: 1336px;
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/desktop/bg.jpg);
+   }
+
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+   .hero {
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../img/hero/desktop/bg@2x.jpg);
+   }
+}
+
+/* ---------------------------------- /Desktop*/
