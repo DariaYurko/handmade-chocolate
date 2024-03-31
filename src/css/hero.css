@@ -1,9 +1,13 @@
+.hero-section {
+   height: 100vh;
+}
 .hero-section__container {
+   height: 100%;
    padding-top: 62px;
 }
 
 .hero {
-   height: 100vh;
+   height: 100%;
    max-width: 727px;
    padding: 20px;
    border-radius: 30px;
