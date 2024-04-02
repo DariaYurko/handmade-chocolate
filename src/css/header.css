@@ -2,12 +2,13 @@
 .page-header {
    padding-top: 20px;
    padding-bottom: 14px;
+   background-color: #fafafa;
+   width: 100%;
 
    position: fixed;
    top: 0;
    left: 0;
-   width: 100%;
-   background-color: #fafafa;
+   z-index: 500;
 }
 
 .page-header__container {
