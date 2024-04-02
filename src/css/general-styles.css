@@ -1,6 +1,7 @@
 body {
    font-family: "Montserrat", sans-serif;
    font-size: 14px;
+   line-height: 1.29;
    letter-spacing: -0.02em;
    color: #111111;
    background-color: #fafafa;
@@ -31,7 +32,7 @@ button:focus {
 
 @media only screen and (min-width: 1200px) {
    [class*="__container"] {
-      max-width: 1400px;
+      max-width: 1200px;
    }
 }
 
@@ -69,13 +70,14 @@ button:focus {
 /* Button ---------------------------*/
 .button {
    font-weight: 600;
-   color: #ffffff;
    line-height: 1.21;
-   background: #fd9222;
+   background: #fd9222;   
    border: 1px solid #fd9222;
    border-radius: 100px;
+   color: #ffffff;
+   text-align: center;
 
-   display: inline-block;
+   min-width: 120px;
    padding: 12px 28px;
    transition: color 150ms linear, background-color 150ms linear;
 }
@@ -137,3 +139,29 @@ button:focus {
 }
 
 /* ------------------------- /Menu */
+
+
+
+/* Section-padding --------------- */
+.reviews {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+
+   .reviews {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+   .reviews {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+
+/* ---------------- /Section-padding */

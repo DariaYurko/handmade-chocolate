@@ -40,12 +40,17 @@
 }
 
 
+
 .slogan {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.21;
    letter-spacing: -0.03em;
    color: #ffffff;
+}
+
+.hero__link {
+   min-width: 159px;
 }
 
 .inner-link {
@@ -139,6 +144,10 @@
 
    .slogan {
       font-size: 28px;
+   }
+
+   .hero__button {
+      min-width: 144px;
    }
 
    .inner-link {
