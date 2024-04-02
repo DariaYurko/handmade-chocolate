@@ -87,23 +87,8 @@
 
 
 
-/* Mobile ONLY ----------------------*/
-
-
-/*  --------------------- /Mobile ONLY*/
-
-
-
 /* Tablet ------------------------*/
 @media only screen and (min-width: 768px) {
-   .reviews__container {
-      /* row-gap: 50px; */
-   }
-
-   /* .reviews__container>*:not(:last-child) {
-      margin-bottom: 50px;
-   } */
-
    .list-reviews__card {
       flex-basis: calc((100% - (16px)) / 2);
    }
