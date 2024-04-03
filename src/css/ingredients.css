@@ -36,7 +36,11 @@
    flex-direction: column;
    align-items: center;
    row-gap: 25px;
+
+   position: relative;
+   overflow: hidden;
 }
+
 
 .card-ingredient__pic {
    width: 224px;
@@ -79,7 +83,80 @@
    color: #ffffff;
 }
 
+.ingredients-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
 
+   width: 100%;
+   height: 100%;
+   padding: 28px;
+
+   background-color: #ffffff;
+   border-radius: 15px;
+
+   transform: translateY(100%);
+   transition: transform 150ms linear;
+}
+
+.ingredients-overlay__title {
+   font-weight: 600;
+   font-size: 18px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: #111111;
+}
+
+.ingredients-overlay__title:not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.ingredients-overlay__benefits:not(:last-child) {
+   margin-bottom: 14px;
+}
+
+.benefits-ingredients {
+   display: flex;
+   gap: 6px;
+}
+
+.benefits-ingredients__item {
+   border-radius: 35px;
+   padding: 6px 16px;
+   font-size: 10px;
+   line-height: 1.2;
+   text-transform: lowercase;
+   background-color: #fd9222;
+   color: #ffffff;
+
+   flex-shrink: 0;
+
+   display: flex;
+   align-self: center;
+   justify-content: center;
+}
+
+.benefits-ingredients__item_white {
+   background-color: #fafafa;
+   border: 1px solid #fd9222;
+   color: #111111;
+}
+
+.ingredients-overlay__description {
+   color: #111111;
+}
+
+
+.card-ingredient:hover .ingredients-overlay {
+   transform: translateY(0);
+}
+
+/* ---------------------------- /Mobile */
+
+
+
+/* Mobile ONLY -------------------------*/
 @media only screen and (max-width:767px) {
    .ingredients__card:not(:last-child) {
       margin-bottom: 20px;
@@ -91,7 +168,7 @@
 @media only screen and (min-width:768px) {
 
    .ingredients__title {
-      max-width: 486px;
+      max-width: 411px;
    }
 
    .ingredients__text {
@@ -113,12 +190,26 @@
    }
 }
 
-
+@media only screen and (min-width:768px) and (max-width:1199px) {
+   .card-ingredient_1 {
+      order: 1;
+   }
+   .card-ingredient_2 {
+      order: 3;
+   }
+   .card-ingredient_3 {
+      order: 4;
+   }
+   .card-ingredient_4 {
+      order: 2;
+   }
+}
 
 
 
 /* Desktop */
 @media only screen and (min-width:1200px) {
+
    .list-ingredients {
       gap: 19px;
    }
@@ -133,7 +224,11 @@
    }
 
    .card-ingredient__pic {
-      width: 204px;
+      width: 203px;
       height: 160px;
+   }
+
+   .ingredients-overlay {
+      padding: 20px;
    }
 }
