@@ -158,7 +158,8 @@ button:focus {
 
 
 
-/* Section-padding --------------- */
+/* Section-paddings --------------- */
+.benefits,
 .reviews,
 .ingredients {
    padding-top: 30px;
@@ -183,4 +184,4 @@ button:focus {
    }
 }
 
-/* ---------------- /Section-padding */
+/* ---------------- /Section-paddings */
