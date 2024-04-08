@@ -11,8 +11,12 @@ body {
    background-color: #fafafa;
 }
 
-a:focus,
-button:focus {
+/* a:focus,
+button:focus, {
+   outline: 1px solid #fd9222;
+} */
+
+*:focus {
    outline: 1px solid #fd9222;
 }
 
