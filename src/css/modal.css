@@ -23,7 +23,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
 
-   width: 311px;
+   max-width: 311px;
    background-color: #fafafa;
    padding: 32px 24px;
    border-radius: 15px;
@@ -48,9 +48,6 @@
    margin-bottom: 32px;
 }
 
-.modal__form {}
-
-.form-review {}
 
 .form-review__label {
    display: block;
@@ -58,13 +55,11 @@
 }
 
 
-
 .form-review__text-label {
    font-size: 13px;
    color: rgba(64, 64, 64, 0.3);
    display: inline-block;
    margin-bottom: 4px;
-
 }
 
 .form-review__input,
@@ -125,19 +120,43 @@
 
 .form-review__checkbox-label {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    gap: 12px;
+
+   line-height: 1.33;
+   color: rgba(64, 64, 64, 0.6);
 }
 
-.form-review__text-label-privacy {
-   line-height: 1.33333;
-   color: rgba(64, 64, 64, 0.6);
+
+.form-review__custom-checkbox {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+
+   flex-shrink: 0;
+
+   width: 20px;
+   height: 20px;
+   border-radius: 6px;
+   border: 1px solid rgba(17, 17, 17, 0.14);
+   cursor: pointer;
+   fill: transparent;
+   transition: fill 250ms linear, background-color 250ms linear;
+}
+
+.form-review__checkbox:checked+.form-review__custom-checkbox {
+   background-color: #fd9222;
+   fill: #ffffff;
+}
+
+.form-review__checkbox:focus+.form-review__custom-checkbox {
+   box-shadow: 0px 0px 0px 1px #fd9222;
 }
 
 .privacy-policy {
    text-transform: capitalize;
    text-decoration: underline;
-   color: #fd9222;;
+   color: #fd9222;
 }
 
 .privacy-policy:hover {
@@ -147,3 +166,51 @@
 .form-review__btn {
    margin-top: 32px;
 }
+
+
+/* Tablet ============================ */
+@media only screen and (min-width: 768px) {
+   .modal {
+      max-width: 517px;
+   }
+
+   .form-review__label {
+      margin-bottom: 18px;
+   }
+
+   .modal__title {
+      max-width: 298px;
+      margin-bottom: 40px;
+   }
+
+   .btn-close-modal__icon {
+      width: 28px;
+      height: 28px;
+   }
+
+   .form-review__text-label {
+      font-size: 14px;
+      margin-bottom: 8px;
+   }
+
+   .form-review__input,
+   .form-review__textarea {
+      border: 1.50px solid #rgba(17, 17, 17, 0.14);
+      border-radius: 13px;
+   }
+
+   .form-review__input {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 62px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+   }
+
+   .form-review__icon {
+      width: 24px;
+      height: 24px;
+   }
+
+}
+   /* ============================ /Tablet*/
