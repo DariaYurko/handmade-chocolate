@@ -76,66 +76,6 @@
    .page-header__social {
       display: none;
    }
-
-   /* ---- Mobile-menu ---- */
-   .mobile-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 999;
-
-      min-width: 220px;
-      height: 100%;
-      padding-top: 136px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-      background-color: #1e1823;
-      overflow: auto;
-
-      display: flex;
-      flex-direction: column;
-      row-gap: 40px;
-
-      transform: translateX(100%);
-      visibility: hidden;
-      transition: transform 100ms linear, visibility 100ms linear;
-   }
-
-   .mobile-menu.is-open {
-      transform: translateX(0);
-      visibility: visible;
-   }
-
-   .mobile-menu__nav {
-      max-width: 124px;
-      align-self: center;
-      flex-grow: 1;
-   }
-
-   .mobile-menu__item:not(:last-child) {
-      margin-bottom: 24px;
-   }
-
-   .mobile-menu__link.current {
-      color: #fd9222;
-   }
-
-   .mobile-menu__social {
-      align-self: flex-start;
-   }
-
-   .btn-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-
-      stroke: #ffffff;
-      fill: none;
-   }
-
-   /* ---- Mobile-menu ---- */
 }
 
 /* ========================== /Mobile only */

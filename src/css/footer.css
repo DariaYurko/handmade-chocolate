@@ -40,6 +40,12 @@
    letter-spacing: -0.02em;
    line-height: 1.29;
    color: #ffffff;
+   transition: color 150ms linear;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+   color: #fd9222;
 }
 
 .contacts__item:not(:last-child) {
@@ -172,6 +178,7 @@
       padding-top: 15px;
       padding-top: 15px;
    }
+
    .subscribe__input::placeholder {
       font-size: 18px;
       line-height: 1.22;
