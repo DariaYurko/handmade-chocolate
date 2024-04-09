@@ -16,6 +16,9 @@ button:focus, {
    outline: 1px solid #fd9222;
 } */
 
+* {
+   transition: outline 150ms linear;
+}
 *:focus {
    outline: 1px solid #fd9222;
 }
@@ -92,7 +95,7 @@ button:focus, {
    font-weight: 600;
    line-height: 1.21;
    background: #fd9222;
-   border: 1px solid #fd9222;
+   border: transparent; 
    border-radius: 100px;
    color: #ffffff;
    text-align: center;

@@ -102,7 +102,7 @@
       transition: transform 100ms linear, visibility 100ms linear;
    }
 
-   .mobile-menu.active {
+   .mobile-menu.is-open {
       transform: translateX(0);
       visibility: visible;
    }
