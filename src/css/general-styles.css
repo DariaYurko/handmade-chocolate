@@ -19,6 +19,7 @@ button:focus, {
 * {
    transition: outline 150ms linear;
 }
+
 *:focus {
    outline: 1px solid #fd9222;
 }
@@ -95,7 +96,7 @@ button:focus, {
    font-weight: 600;
    line-height: 1.21;
    background: #fd9222;
-   border: transparent; 
+   border: transparent;
    border-radius: 100px;
    color: #ffffff;
    text-align: center;
@@ -167,8 +168,9 @@ button:focus, {
 
 /* Section-paddings --------------- */
 .benefits,
-.reviews,
-.ingredients {
+.ingredients,
+.made,
+.reviews {
    padding-top: 30px;
    padding-bottom: 30px;
 }
