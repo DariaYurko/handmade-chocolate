@@ -11,7 +11,7 @@
 </symbol>
 
 <symbol id="icon-play" viewBox="0 0 32 32">
-<path fill="#f5f4f4" style="fill: var(--color3, #f5f4f4)" d="M1.067 32v-32l29.867 16-29.867 16z"></path>
+<path d="M1.067 32v-32l29.867 16-29.867 16z"></path>
 </symbol>
 
 <symbol id="icon-spoon" viewBox="0 0 32 32">
