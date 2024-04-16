@@ -1,7 +1,8 @@
-.benefits {}
+.benefits {
+   background-color: #1e1823;
+}
 
 .benefits__container {
-   background-color: #1e1823;
    padding-top: 20px;
    padding-bottom: 20px;
 }
