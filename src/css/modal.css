@@ -10,6 +10,7 @@
    opacity: 0;
    visibility: hidden;
    transition: opacity 200ms linear, visibility 200ms linear;
+   overflow: auto;
 }
 
 .backdrop.is-open {
@@ -19,11 +20,13 @@
 
 .modal {
    position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
 
-   max-width: 311px;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+
+   min-width: 311px;
+
    background-color: #fafafa;
    padding: 32px 24px;
    border-radius: 15px;
@@ -65,7 +68,7 @@
 .form-review__input,
 .form-review__textarea {
    width: 100%;
-   border-radius: 6px;
+   border-radius: 8px;
    border: 1px solid rgba(17, 17, 17, 0.14);
    background-color: transparent;
 }
@@ -75,7 +78,7 @@
 }
 
 .form-review__input {
-   height: 68px;
+   height: 45px;
    padding-left: 43px;
 }
 
@@ -177,6 +180,10 @@
    .modal {
       max-width: 517px;
       padding: 40px;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
    }
 
 
@@ -207,10 +214,10 @@
    }
 
    .form-review__input {
-      height: 68px;
-      padding-left: 62px;
       font-size: 18px;
       letter-spacing: -0.02em;
+      padding-left: 62px;
+      height: 68px;
    }
 
    .form-review__icon {
@@ -234,14 +241,15 @@
 /* ============================ /Tablet*/
 
 
-
+/* Desktop ==============================*/
 @media only screen and (min-width: 1200px) {
    .modal {
       padding: 30px;
    }
+
    .modal__title {
       margin-bottom: 20px;
-      font-size:20px;
+      font-size: 20px;
    }
 
    .form-review__label,
@@ -251,7 +259,7 @@
 
    .form-review__input {
       font-size: 15px;
-      height: 50px;
+      height: 68px;
       padding-left: 50px;
    }
 
